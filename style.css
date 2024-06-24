@@ -1,0 +1,53 @@
+html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}body{margin:0;padding:0}ol,ul{list-style:none}a{text-decoration:none;color:inherit}
+/* hey */
+h1 {
+    font-family: serif;
+    text-align: center;
+
+}
+body {
+    background: #000;
+    color: white;
+}
+.circle {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: red;
+    border-radius: 100%;
+}
+.square {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: red;
+    animation: squareSpin 5s infinite ease-in-out;
+}
+@keyframes squareSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+ h1 { font-family: serif; text-align: center; } body { background: #000; color: white; } .circle { height: 100px; width: 100px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: red; border-radius: 100%; } .square { height: 100px; width: 100px; position: absolute; left: 50%; transform: translateX(-50%); background: red; animation: squareSpin 5s infinite ease-in-out; } @keyframes squareSpin { 0% { transform: rotate(0deg); } 100% { transform: rotate(90deg); } }
+
+ .circle,.square{height:100px;width:100px;position:absolute;left:50%;background:red}h1{font-family:serif;text-align:center}body{background:#000;color:#fff}.circle{top:50%;transform:translate(-50%,-50%);border-radius:100%}.square{transform:translateX(-50%);animation:5s ease-in-out infinite squareSpin}@keyframes squareSpin{0%{transform:rotate(0)}100%{transform:rotate(90deg)}}
+
+
+ body {
+    font-family: red;
+}
+h1 {
+    font-family: serif;
+} 
+
+
+h1{font-family:serif;text-align:center}body{background:#000;color:white}.circle{height:100px;width:100px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:red;border-radius:100%}.square{height:100px;width:100px;position:absolute;left:50%;transform:translateX(-50%);background:red;animation:squareSpin 5s infinite ease-in-out}@keyframes squareSpin{ 0%{transform:rotate(0)}100%{transform:rotate(90deg)}
