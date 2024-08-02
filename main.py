@@ -10,7 +10,7 @@ import requests
 import ssl
 import socket
 import os
-from config import DISCORD_TOKEN
+from config.config import DISCORD_TOKEN
 # INTENTS
 intents = discord.Intents.all()
 intents.messages = True
@@ -121,6 +121,44 @@ embed_credit.add_field(
 @bot.tree.command(name="credit", description="Developer credit")
 async def credit(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed_credit)
+
+
+
+
+
+# @bot.tree.command(name="service")
+# async def service(interaction: discord.Interaction, title: str, desc: str, price: str, titlefield1: str = None, valuefield1: str = None):
+#     embed_service = discord.Embed(
+#         title=f'> {title}',
+#         description=desc,
+#         color=discord.Color.dark_red()
+#     )
+
+#     embed_service.set_author(name="Tim", url="https://github.com/apie-happy")
+#     embed_service.set_image(url="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTRxN3UweXA3aXdzcXlwa3RwZjdoNGljOTJmdDdha3I2cWNtYm13eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7CjEqtZUm2OBmJ9eha/giphy.gif")
+#     embed_service.set_footer(icon_url="https://i.pinimg.com/564x/4d/4e/68/4d4e68f0005e4bf67aead0778d690017.jpg", text="Tim")
+
+#     if titlefield1 and valuefield1:
+#         embed_service.add_field(
+#             name=titlefield1,
+#             value=f'```{valuefield1}```',  # Utilisation des triples guillemets
+#             inline=False,
+#         )
+
+#     embed_service.add_field(
+#         name="Prix :",
+#         value=price,
+#         inline=False
+#     )
+
+#     await interaction.response.send_message(embed=embed_service)
+
+    
+
+
+
+
+
 
 
 
@@ -283,6 +321,10 @@ def is_admin(ctx):
     return ctx.author.guild_permissions.administrator
 # FINISH
 
+
+
+
+
 @bot.command()
 @commands.check(is_admin)
 async def testAdmin(ctx):
@@ -300,10 +342,10 @@ async def on_command_error(ctx, error):
 
 
 # FINISH
-@bot.command()
-@commands.check(is_admin)
-async def clear(ctx, limit: int = None):
-    await ctx.channel.purge(limit=limit)
+# @bot.command()
+# @commands.check(is_admin)
+# async def clear(ctx, limit: int = None):
+#     await ctx.channel.purge(limit=limit)
 
 
 
