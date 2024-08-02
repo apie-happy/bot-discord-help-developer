@@ -10,7 +10,7 @@ import requests
 import ssl
 import socket
 import os
-from config.config import DISCORD_TOKEN
+from config import DISCORD_TOKEN
 # INTENTS
 intents = discord.Intents.all()
 intents.messages = True

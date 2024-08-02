@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container_email {
+            position: absolute;
+            top: 0;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 35px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #634fd4;
+        }
+        .header_email {
+            margin-bottom: 25px;
+        }
+        .header_email img {
+            max-width: 100px;
+        }
+        .box_email_text {
+            text-align: center;
+        }
+        .box_email_text h1 {
+            color: turquoise;
+            font-size: 24px;
+            position: relative;
+            margin-bottom: 25px;
+        }
+        .box_email_text h1::before {
+            content: '';
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            background: turquoise;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box_email_text p {
+            color: #333333;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 25px 0;
+        }
+        .box_email_text h2 {
+            color: turquoise;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .box_email_text a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #00CED1;
+            color: #ffffff;
+            padding: 10px 50px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .box_email_text a:hover {
+            background-color: #ce472f;
+        }
+        @media (max-width: 600px) {
+            .container_email {
+                margin: 20px;
+                padding: 15px;
+            }
+            .box_email_text h1, .box_email_text h2 {
+                font-size: 20px;
+            }
+            .box_email_text p {
+                font-size: 14px;
+            }
+            .box_email_text a {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    </header>
+    <div class="container_email">
+        <header class="header_email">
+            <img src="https://i.imgur.com/WUtsRM9.png" alt="logo">
+        </header>
+        <div class="box_email_text">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti non harum quis praesentium repellendus, ex possimus sed perferendis, hic ullam explicabo odio qui eum.</p>
+            <h2>Subtitle</h2>
+            <a href="#">Link</a>
+        </div>
+    </div>
+</body>
+</html>
